@@ -1,0 +1,26 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+# Note: vN/analysis/Transfer_Analysis_executed.ipynb (rendered notebooks) and the
+# docs/ HTML showcase are intentionally COMMITTED so the results are viewable on GitHub
+# without running anything.
+
+# --- Regenerated pipeline outputs (frozen expected values live in results_reference/) ---
+v*/results/
+# Per-version verification run logs (regenerated on each run)
+v*/run_verify.log
+v*/sim_verify.log
+
+# --- Local NTFS scaffold artifacts / OS junk ---
+Thumbs.db
+.DS_Store

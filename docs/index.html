@@ -1,0 +1,162 @@
+<title>SBPO Solar-Irradiance Transfer-Learning — Results Showcase</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --border: #dfdfdf;
+    --row-alt: #f7f7f7;
+    --link: #0b5fae;
+    --link-visited: #6a3fa0;
+    --code-bg: #f0f0f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #e8e8e8;
+      --muted: #a0a0a0;
+      --border: #3a3d42;
+      --row-alt: #1c1f24;
+      --link: #7ab8f5;
+      --link-visited: #c9a6e8;
+      --code-bg: #22252a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.65rem;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.01em;
+  }
+  p.intro {
+    color: var(--muted);
+    margin: 0 0 2rem;
+    font-size: 1.02rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 2rem;
+    font-size: 0.95rem;
+  }
+  caption {
+    text-align: left;
+    caption-side: top;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    font-weight: 600;
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  tbody tr:nth-child(even) { background: var(--row-alt); }
+  td.version {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  td.label {
+    color: var(--muted);
+  }
+  td.num {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  a:visited { color: var(--link-visited); }
+  a:hover { text-decoration: underline; }
+  code {
+    background: var(--code-bg);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+</style>
+
+<div class="container">
+  <h1>SBPO Solar-Irradiance Transfer-Learning — Results Showcase</h1>
+  <p class="intro">
+    Four progressively corrected versions of a solar-irradiance transfer-learning
+    experiment (SBPO paper reproduction), each with a fully executed analysis
+    notebook rendered below.
+  </p>
+
+  <table>
+    <caption>Versions</caption>
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>What changed</th>
+        <th>Mean Transfer MAPE %</th>
+        <th>Mean Local MAPE %</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="version"><a href="v3.html">v3</a></td>
+        <td class="label">Base reproduction of the SBPO paper</td>
+        <td class="num">12.825</td>
+        <td class="num">12.235</td>
+      </tr>
+      <tr>
+        <td class="version"><a href="v4.html">v4</a></td>
+        <td class="label">Data-only fix (cleaned Galeão source + extra 2021&ndash;23 years)</td>
+        <td class="num">12.632</td>
+        <td class="num">11.782</td>
+      </tr>
+      <tr>
+        <td class="version"><a href="v5.html">v5</a></td>
+        <td class="label">IQR outlier-leakage fix (bounds computed on train slice only)</td>
+        <td class="num">12.719</td>
+        <td class="num">11.825</td>
+      </tr>
+      <tr>
+        <td class="version"><a href="v6.html">v6</a></td>
+        <td class="label">Adds 7 linear temporal features (demonstrates transfer degradation)</td>
+        <td class="num">12.785</td>
+        <td class="num">11.799</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="intro" style="margin-top:-1rem;">
+    Means are computed across all 20 stations in each version's
+    <code>results_reference/sbpo_v3_results.csv</code>.
+  </p>
+
+  <footer>
+    Rendered from <code>vN/analysis/Transfer_Analysis_executed.ipynb</code>.
+    See the repo README for how to reproduce.
+  </footer>
+</div>
