@@ -58,6 +58,10 @@ HTML notebooks, viewable online at
 [v5](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v5.html) ·
 [v6](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v6.html).*
 
+*The original paper published in SBPO — Brazilian Symposium on Operational Research — is
+available on the
+[official proceedings site](https://proceedings.science/sbpo/sbpo-2025/trabalhos/exploring-transfer-learning-techniques-for-solar-irradiation-forecast-across-geo?lang=pt-br).*
+
 ## What makes this more than a benchmark
 
 - **Similarity-driven transferability.** Beyond raw error, three complementary lenses —
