@@ -7,7 +7,11 @@
 </p>
 
 <p align="center">
-  <a href="https://proceedings.science/sbpo/sbpo-2025/trabalhos/exploring-transfer-learning-techniques-for-solar-irradiation-forecast-across-geo?lang=pt-br"><img src="https://img.shields.io/badge/Paper-SBPO%202025-1a5fb4" alt="Paper"></a>
+  <a href="https://proceedings.science/sbpo/sbpo-2025/trabalhos/exploring-transfer-learning-techniques-for-solar-irradiation-forecast-across-geo?lang=pt-br"><img src="https://img.shields.io/badge/Paper-The%20original%20paper%20published%20in%20SBPO%20--%20Brazilian%20Symposium%20on%20Operational%20Research-1a5fb4" alt="The original paper published in SBPO - Brazilian Symposium on Operational Research"></a>
+  <br>
+  <a href="paper/SBPO2025_transfer-learning-solar-forecasting.md"><img src="https://img.shields.io/badge/Paper-Markdown%20(.md)%20version%20of%20the%20paper-1a5fb4" alt="Markdown (.md) version of the paper"></a>
+  <a href="https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/"><img src="https://img.shields.io/badge/Results-Live%20HTML%20showcase%20(GitHub%20Pages)-e65100" alt="Live HTML results showcase on GitHub Pages"></a>
+  <br>
   <img src="https://img.shields.io/badge/Python-3.12-3776ab" alt="Python 3.12">
   <img src="https://img.shields.io/badge/Results-bit--exact%20reproducible-2e7d32" alt="Reproducible">
   <img src="https://img.shields.io/badge/License-MIT-6a1b9a" alt="MIT License">
@@ -47,7 +51,12 @@ both a strong positive result and a principled map of its limits.
 | Gera / Maranhão | 2,145 km | 19.4% | 15.7% | +3.7 |
 
 *Full 20-station results, per-version, in [`COMPARISON.md`](COMPARISON.md) and the rendered
-notebooks under [`docs/`](docs/index.html).*
+HTML notebooks, viewable online at
+[rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/):
+[v3](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v3.html) ·
+[v4](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v4.html) ·
+[v5](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v5.html) ·
+[v6](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v6.html).*
 
 ## What makes this more than a benchmark
 
@@ -83,8 +92,8 @@ features. Every version is verified end-to-end:
 > Rodrigo Huber Marques Moreira Mendes, Fernanda Araújo Baião, Reinaldo Castro Souza · PUC-Rio
 > *Simpósio Brasileiro de Pesquisa Operacional (SBPO) 2025*
 
-[Official publication](https://proceedings.science/sbpo/sbpo-2025/trabalhos/exploring-transfer-learning-techniques-for-solar-irradiation-forecast-across-geo?lang=pt-br)
-· [full text](paper/SBPO2025_transfer-learning-solar-forecasting.md)
+[The original paper published in SBPO — Brazilian Symposium on Operational Research](https://proceedings.science/sbpo/sbpo-2025/trabalhos/exploring-transfer-learning-techniques-for-solar-irradiation-forecast-across-geo?lang=pt-br)
+· [Markdown (.md) version of the paper](paper/SBPO2025_transfer-learning-solar-forecasting.md)
 · [BibTeX](paper/README.md)
 
 ## Quickstart
@@ -110,7 +119,7 @@ end-to-end reproduction (raw data fetch → preparation → analysis notebooks) 
 | `v3/`–`v6/` | Four pipeline versions: `run_experiment.py`, `run_similarity.py`, `model/`, frozen `results_reference/`, analysis notebook |
 | `data/` | Bundled MERRA-2 / Renewables.ninja inputs for all 20 stations |
 | `data_acquisition/`, `v4/data_prep/` | Raw-data fetch & preparation scripts (full provenance) |
-| `docs/` | Zero-install HTML results showcase |
+| `docs/` | Zero-install HTML results showcase — [live on GitHub Pages](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/) ([v3](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v3.html) · [v4](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v4.html) · [v5](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v5.html) · [v6](https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/v6.html)) |
 | `paper/` | Paper full text + citation |
 
 > **Data note:** reproducing the published results needs **no API token** — the data is bundled.
