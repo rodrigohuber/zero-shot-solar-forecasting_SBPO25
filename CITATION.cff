@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the paper below (see preferred-citation)."
+title: "Zero-Shot Transfer Learning for Solar-Irradiance Forecasting (SBPO 2025)"
+type: software
+authors:
+  - family-names: "Mendes"
+    given-names: "Rodrigo Huber Marques Moreira"
+  - family-names: "Baião"
+    given-names: "Fernanda Araújo"
+  - family-names: "Souza"
+    given-names: "Reinaldo Castro"
+repository-code: "https://github.com/rodrigohuber/zero-shot-solar-forecasting_SBPO25"
+url: "https://rodrigohuber.github.io/zero-shot-solar-forecasting_SBPO25/"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Exploring Transfer Learning Techniques for Solar Irradiation Forecast across Geographically Diverse Locations in Brazil Using Reanalysis Data"
+  authors:
+    - family-names: "Mendes"
+      given-names: "Rodrigo Huber Marques Moreira"
+    - family-names: "Baião"
+      given-names: "Fernanda Araújo"
+    - family-names: "Souza"
+      given-names: "Reinaldo Castro"
+  collection-title: "Simpósio Brasileiro de Pesquisa Operacional (SBPO)"
+  year: 2025
+  location:
+    name: "Rio de Janeiro, Brazil"
+  url: "https://proceedings.science/sbpo/sbpo-2025/trabalhos/exploring-transfer-learning-techniques-for-solar-irradiation-forecast-across-geo"

@@ -100,6 +100,26 @@ features. Every version is verified end-to-end:
 · [Markdown (.md) version of the paper](paper/SBPO2025_transfer-learning-solar-forecasting.md)
 · [BibTeX](paper/README.md)
 
+## How to cite
+
+If you use this repository or its results, please cite the paper:
+
+```bibtex
+@inproceedings{mendes2025transfer,
+  title     = {Exploring Transfer Learning Techniques for Solar Irradiation Forecast
+               across Geographically Diverse Locations in Brazil Using Reanalysis Data},
+  author    = {Mendes, Rodrigo Huber Marques Moreira and Bai{\~a}o, Fernanda Ara{\'u}jo
+               and Souza, Reinaldo Castro},
+  booktitle = {Simp{\'o}sio Brasileiro de Pesquisa Operacional (SBPO)},
+  year      = {2025},
+  address   = {Rio de Janeiro, Brazil},
+  url       = {https://proceedings.science/sbpo/sbpo-2025/trabalhos/exploring-transfer-learning-techniques-for-solar-irradiation-forecast-across-geo}
+}
+```
+
+You can also use GitHub's **"Cite this repository"** button (top of the sidebar), powered by
+[`CITATION.cff`](CITATION.cff).
+
 ## Quickstart
 
 ```powershell
